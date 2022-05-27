@@ -1,0 +1,70 @@
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>Google Cloud Translation API Demo</h1>
+    <h2>Submit a translation request</h2>
+    <hr>
+    <form (ngSubmit)="onSubmit()" #translateForm="ngForm">
+      <div class="form-group">
+        <label for="text">Text</label>
+        <input type="text" class="form-control" id="text"
+               required
+               [(ngModel)]="model.text" name="text"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Text is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="target">Target language</label>
+        <input type="text" class="form-control" id="target"
+               required
+               [(ngModel)]="model.target" name="target"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Language is required
+        </div>
+      </div>
+
+      <div style="float:left">
+        <button type="submit" class="btn btn-success" [disabled]="!translateForm.form.valid">Submit</button>
+        <button  type="button" class="btn btn-default" [disabled]="empty" (click)="newTranslation(); translateForm.reset()">Clear</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h1>Google Cloud Translation API Demo</h1>
+    <h2>Results</h2>
+    <hr>
+    <div class="row">
+      <div class="col-xs-3">Text</div>
+      <div class="col-xs-9">{{ model.text }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Target language</div>
+      <div class="col-xs-9">{{ model.target }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Translation</div>
+      <div class="col-xs-9">{{ model.translation }}</div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>
+</div>
+
+<!-- ====================================================  -->
+
+<div>
+  <form>
+
+    <!-- ... all of the form ... -->
+
+  </form>
+</div>
+
+<!-- ====================================================  -->

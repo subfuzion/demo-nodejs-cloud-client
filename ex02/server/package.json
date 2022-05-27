@@ -1,0 +1,21 @@
+{
+  "name": "translate-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Demo Cloud Translation API with Node.js/Express backend",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^6.3.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1"
+  }
+}
