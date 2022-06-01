@@ -1,4 +1,5 @@
 # https://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore
+.envrc
 .gcloudignore
 .git
 .gitignore
