@@ -1,14 +1,8 @@
 # demo-nodejs-cloud-client
 
-Two demo apps using the Node.js Cloud Client library to access Google Cloud APIs.
+Demo Node/Express/Angular app using the Node.js Cloud Client library to access a Google Cloud API.
 
-## [ex01](./ex01) - CLI app demo
+![form](./assets/form.png)
 
-![cli-demo](./assets/ex01-cli-demo.png)
-
-## [ex02](./ex02) - Node.js/Express/Angular demo deployed on Cloud Run
-
-![hosted-form](./assets/ex02-hosted-form.png)
-
-![hosted-result](./assets/ex02-hosted-result.png)
+![result](./assets/result.png)
 
