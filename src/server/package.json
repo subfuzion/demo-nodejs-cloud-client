@@ -1,11 +1,11 @@
 {
-  "name": "translate-demo",
+  "name": "demo-nodejs-cloud-client",
   "private": true,
   "version": "1.0.0",
-  "description": "Demo Cloud Translation API with Node.js/Express backend",
+  "description": "Demo Cloud Translation API with Node.js/Express backend serving Angular frontend",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "DEBUG=demo-nodejs-cloud-client:* node ./bin/www",
     "test": "echo \"No tests\" && exit 0"
   },
   "dependencies": {
