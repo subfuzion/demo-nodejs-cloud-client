@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eu
+cd src/server && gcloud run deploy "$SERVICE" \
+		--project "$PROJECT" \
+		--region "$REGION" \
+		--allow-unauthenticated \
+		--source .

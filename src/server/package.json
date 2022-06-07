@@ -5,7 +5,8 @@
   "description": "Demo Cloud Translation API with Node.js/Express backend serving Angular frontend",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "DEBUG=demo-nodejs-cloud-client:* node ./bin/www",
+    "start": "node ./bin/www",
+    "debug": "DEBUG=demo-nodejs-cloud-client:* node ./bin/www",
     "test": "echo \"No tests\" && exit 0"
   },
   "dependencies": {

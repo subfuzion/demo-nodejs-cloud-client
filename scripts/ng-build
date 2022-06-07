@@ -1,0 +1,3 @@
+#!/bin/sh
+cd src/client && ng build; cd -
+rm -rf src/server/public && cp -r src/client/dist src/server/public
