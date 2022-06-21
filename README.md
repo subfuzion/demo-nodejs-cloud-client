@@ -167,7 +167,7 @@ understand are the following:
   for making translation requests. Aside from API request handling boilerplate,
   the
   translation [code](https://github.com/subfuzion/demo-nodejs-cloud-client/blob/main/src/server/app.js#L25)
-  is essentially the same that was shown in the **Getting started** section. \
+  is essentially the same that was shown in the **Getting started** section.
 
 * The frontend implements an Angular service
   ([translate.service.ts](https://github.com/subfuzion/demo-nodejs-cloud-client/blob/main/src/client/src/app/translate.service.ts))
